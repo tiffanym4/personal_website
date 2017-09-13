@@ -1,0 +1,200 @@
+/**
+ * Colors used
+ * #fd8588 - coral pink
+ * #30262c - black/purple
+ * #f4f4f4 - grey/white
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+body {
+    font-family: 'Libre Baskerville', Times Roman, Courier, serif;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #fffff;
+    text-align: center;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.accent {
+    color: #fd8588;
+}
+
+/* Header */
+header {
+    color: #f4f4f4;
+    text-align: center;
+    padding-top:20px;
+    min-height:500px;
+    background:url('../assets/banner.jpg') center center no-repeat;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+    border: white, solid, 1px;
+}
+
+header a {
+    color: #f4f4f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header #title {
+    margin-top: 125px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+header ul {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    border
+}
+
+/* About Me */
+#about {
+    background-color: #fd8588;
+    min-height: 350px;
+    color: white;
+    padding-top: 20px;
+}
+
+#about p {
+    margin: 20px;
+}
+
+/* Experience */
+#experience {
+    background-color: white;
+    min-height: 550px;
+    padding-top: 20px;
+}
+
+/* Skills */
+#skills {
+    background-color: #f4f4f4;
+    min-height: 350px;
+    padding-top: 20px;
+}
+
+#skills h3 {
+    margin-bottom: 10px;
+}
+
+#skills .box {
+    display: inline-block;
+    vertical-align: top;
+    float: center;
+    width: 30%;
+}
+
+/* Footer */
+footer {
+    background-color: #30262c;
+    color: white;
+    min-height: 300px;
+    padding-top: 20px;
+}
+
+footer a {
+    color: #f4f4f4;
+}
+
+footer a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer .box {
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 0;
+    height: 100%;
+}
+
+footer #comment {
+    width: 50%;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #fd8588;
+    border: none;
+    padding: 10px;
+    color: #f4f4f4;
+}
+
+button:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer #social {
+    width: 20%;
+}
+
+footer #email {
+    width: 20%;
+}
+#copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    margin-top: 20px;
+    padding: 20px 0;
+    font-size: 12px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    header li, #skills .box, footer .box, footer #comment, footer #social, footer #email {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    header nav {
+        display: none;
+    }
+    
+    header {
+        min-height: 300px;
+        background-size: 1250px;
+    }
+    
+    header #title {
+        margin-top: 150px;
+        font-size: 20px;
+        line-height: 1;
+    }
+    
+    #skills, #experience {
+        padding-bottom: 20px;
+    }
+}
+
